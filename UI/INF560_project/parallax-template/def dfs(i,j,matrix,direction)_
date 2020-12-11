@@ -1,0 +1,35 @@
+def dfs(i,j,matrix,direction):
+	
+	if (i<0 or i > n or j<0 or j>m or matrix[i][j]==0):
+		return 
+	temp.append(direction)
+	matrix[i][j]=0
+	dfs(i,j-1,matrix,1)
+	dfs(i+1,j,matrix,2)
+	dfs(i,j+1,matrix,3)
+	dfs(i-1,j,matrix,4)
+
+count=0
+for i in range(n):
+	for j in range(m):
+		if matrix[i][j]!=0:
+			x=dfs(i,j,matrix,0)
+			d[x]+=1
+			count+=1
+
+
+
+dfs(0,0)
+dfs(0,1)
+
+
+0 1 1 0 0 0
+1 1 1 0 0 0
+0 0 0 1 1 1
+0 0 0 0 1 1
+0 0 0 0 0 0
+
+
+[0,2,2,3,4]
+[0,2,2,3,4]
+

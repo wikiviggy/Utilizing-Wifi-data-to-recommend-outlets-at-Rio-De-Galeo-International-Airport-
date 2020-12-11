@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rio Location Recommendation System</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+</head>
+
+<body>
+  <h3 class="header center black-text">RIOgalẽo Airport- Location Recommendations</h3>
+
+  <h2 class="center brown-text"><i class="material-icons">local_dining</i></h2>
+  <h5 class="center">Dining Options</h5>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/subway.png') }}">
+                    <!-- <span class="caption">Text below the image </span> -->
+
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Subway</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_1 }}</h6>
+                    <h6>Expected Wait Time: {{ var_2 }} minutes</h6>
+                    <h6>Risk Level: {{ var_3 }} <a class="btn-floating btn-small {{ var_4 }} pulse"><i
+                          class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+<a
+  href="https://www.google.com/maps/place/Subway/@-22.8139531,-43.2472695,19.75z/data=!4m13!1m7!3m6!1s0x9979937424752b:0x921906fbbf420e91!2sTerminal+2+-+Gale%C3%A3o,+Rio+de+Janeiro+-+RJ,+21941-570,+Brazil!3b1!8m2!3d-22.8146002!4d-43.2462977!3m4!1s0x99798f22fbcb99:0xb2b35f4d08b0eb06!8m2!3d-22.8134133!4d-43.2468914"></a>View
+  Map &nbsp;</a>
+<a
+  href="https://www.google.com/search?tbm=lcl&ei=iRaKXpu2AYzz-gS214voDQ&q=subway+rio+de+janeiro+aeroport+&oq=subway+rio+de+janeiro+aeroport+&gs_l=psy-ab.3...23886.28120.0.28663.9.9.0.0.0.0.124.899.6j3.9.0....0...1c.1.64.psy-ab..0.7.702...0i22i30k1j0i8i7i30k1j0i8i30k1j33i299k1j33i10k1.0.ufsRmyLxOm4#lrd=0x99798f22fbcb99:0xb2b35f4d08b0eb06,1,,,&rlfi=hd:;si:12876740544045312774,l,Ch5zdWJ3YXkgcmlvIGRlIGphbmVpcm8gYWVyb3BvcnQiA4gBAUiYzbP596qAgAhaPQoPc3Vid2F5IGFlcm9wb3J0EAAQBBgAGAEYAhgDIh5zdWJ3YXkgcmlvIGRlIGphbmVpcm8gYWVyb3BvcnQ;mv:[[-22.7943128,-43.152585699999996],[-22.9987532,-43.381994999999996]]">
+  Google Reviews </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/palaphita.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Palaphita</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_5 }}</h6>
+                    <h6>Expected Wait Time: {{ var_6 }} minutes</h6>
+                    <h6>Risk Level: {{ var_7 }} <a class="btn-floating btn-small {{ var_8 }} pulse"><i
+                          class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a
+                      href="https://www.google.com/maps/place/Palaphita/@-22.8147129,-43.2469259,18z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f094b29d3:0xf7f4fe87e9efe8ec!8m2!3d-22.8153575!4d-43.2447591">View
+                      Map
+                      &nbsp;</a>
+
+                    <a
+                      href="https://www.google.com/search?q=palaphita+tom+jobin+airport&source=lmns&bih=754&biw=1536&hl=en&ved=2ahUKEwiGzYaswtHoAhVCJX0KHe58DZ8Q_AUoAHoECAEQAA#lrd=0x99798f094b29d3:0xf7f4fe87e9efe8ec,1,,,">
+                      Google Reviews </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/havanna.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Havanna</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_9 }}</h6>
+                    <h6>Expected Wait Time: {{ var_10 }}</h6>
+                    <h6>Risk Level: {{ var_11 }} <a class="btn-floating btn-small {{ var_12 }} pulse"><i
+                          class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a
+                      href="https://www.google.com/maps/place/Havanna/@-22.8141964,-43.2475386,18z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f6bb52b11:0x94a6a701e37cbc97!8m2!3d-22.8139347!4d-43.2476465">View
+                      Map
+                      &nbsp;</a>
+                    <a
+                      href="https://www.google.com/search?ei=WfKJXsaQDNXk9APfm5HgDw&q=havanna+cafe+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim+&oq=havanna+cafe+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim+&gs_lcp=CgZwc3ktYWIQAzoGCAAQFhAeSgkIFxIFMTItOTdKCQgYEgUxMi0xMFC2FlieLmDNL2gAcAB4AIABa4gBjwiSAQM2LjWYAQCgAQGgAQKqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwiGocaxxtHoAhVVMn0KHd9NBPwQ4dUDCAw&uact=5#lrd=0x99798f6bb52b11:0x94a6a701e37cbc97,1,,,">
+                      Google Reviews </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/giraf.jpg') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Giraffas</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_13 }}</h6>
+                    <h6>Expected Wait Time: {{ var_14 }} minutes</h6>
+                    <h6>Risk Level: {{ var_15 }} <a class="btn-floating btn-small {{ var_16 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a
+                      href="https://www.google.com/maps/place/Giraffas/@-22.8149855,-43.2476851,19z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f4ae28bf3:0x347a72a1ad4f8fe7!8m2!3d-22.8150803!4d-43.2472093">
+                      View Map &nbsp;</a>
+                    <a href="https://www.google.com/search?ei=Z_KJXuS0B5vA0PEPjdWVqAo&q=giraffas+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&oq=giraffas+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&gs_lcp=CgZwc3ktYWIQAzoICAAQCBAHEB5KCQgXEgUxMi05OEoICBgSBDEyLThQ4dQEWJTiBGCi4wRoAHAAeACAAYgBiAGBB5IBAzcuMpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwikhJi4xtHoAhUbIDQIHY1qBaUQ4dUDCAw&uact=5#lrd=0x99798f4ae28bf3:0x347a72a1ad4f8fe7,1,,,"> Google Reviews </a>
+				  
+				  </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/divdog.jpeg') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Divino Fogão</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_17 }}</h6>
+                    <h6>Expected Wait Time: {{ var_18 }} minutes</h6>
+                    <h6>Risk Level: {{ var_19 }} <a class="btn-floating btn-small {{ var_20 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Divino+Fog%C3%A3o/@-22.8149855,-43.2476851,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f4a7ba64d:0x9977e48bf46bc7ad!8m2!3d-22.8149867!4d-43.2471379">View Map &nbsp;</a>
+                    <a href="https://www.google.com/search?ei=tvKJXpviJryq0PEPjr-niAg&q=Divino+Fog%C3%A3o+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&oq=Divino+Fog%C3%A3o+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&gs_lcp=CgZwc3ktYWIQA0oJCBcSBTEyLTgzSggIGBIEMTItNFCi_QFYov0BYLKpAmgAcAB4AIABWIgBxQKSAQE0mAEAoAECoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwiblY3extHoAhU8FTQIHY7fCYEQ4dUDCAw&uact=5#lrd=0x99798f4a7ba64d:0x9977e48bf46bc7ad,1,,,"> Google Reviews </a>    
+				  </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/star.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Starbucks</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_21 }}</h6>
+                    <h6>Expected Wait Time: {{ var_22 }} ninutes</h6>
+                    <h6>Risk Level: {{ var_23 }} <a class="btn-floating btn-small {{ var_24 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Starbucks/@-22.8146457,-43.247267,19z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x997918bab97abb:0x564f122cd07a6b18!8m2!3d-22.8142406!4d-43.2470544">View Map &nbsp;
+                      </a>
+					<a href="https://www.google.com/search?biw=1536&bih=706&ei=6fCJXr_7Kq-_0PEP7rqy2A8&q=starbucks%20rio%20de%20janeiro%20galeao&oq=starbucks+rio+de+gale&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB46CAghEBYQHRAeOgUIIRCgAUoOCBcSCjExLTExOWcxMTFKCggYEgYxMS0yZzVQ2yxYozhg-0JoAXAAeACAAXSIAdwFkgEDMS42mAEAoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&npsic=0&rflfq=1&rlha=0&rllag=-22845866,-43258156,3790&tbm=lcl&rldimm=7535471023558387617&lqi=Ch9zdGFyYnVja3MgcmlvIGRlIGphbmVpcm8gZ2FsZWFvIgOIAQFaLAoJc3RhcmJ1Y2tzIh9zdGFyYnVja3MgcmlvIGRlIGphbmVpcm8gZ2FsZWFv&ved=2ahUKEwiEseGGxdHoAhWRMX0KHfaWAHEQvS4wAHoECAsQFg&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&rlst=f#lrd=0x9979cd6341a8e9:0x68935ef8a67267a1,1,,,&rlfi=hd:;si:7535471023558387617,l,Ch9zdGFyYnVja3MgcmlvIGRlIGphbmVpcm8gZ2FsZWFvIgOIAQFaLAoJc3RhcmJ1Y2tzIh9zdGFyYnVja3MgcmlvIGRlIGphbmVpcm8gZ2FsZWFv;mv:[[-22.814277122680974,-43.24353394714043],[-22.814637077319027,-43.24392445285958]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4"> Google Reviews </a>     
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/vdc.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Vivenda do Camarão</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_25 }}</h6>
+                    <h6>Expected Wait Time: {{ var_26 }}  mninutes </h6>
+                    <h6>Risk Level: {{ var_27 }} <a class="btn-floating btn-small {{ var_28 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Vivenda+do+Camar%C3%A3o/@-22.8148177,-43.2474501,19z/data=!4m5!3m4!1s0x99791a64adbf27:0x1df9905f20cf84ab!8m2!3d-22.8148566!4d-43.2472978">View Map &nbsp;</a>
+                    <a href="https://www.google.com/search?tbm=lcl&ei=cPGJXoTdFsfC-gS51aH4Dg&q=vivenda+do+camar%C3%A3o+aeroporto+&oq=vivenda+do+camar%C3%A3o+aeroporto+&gs_l=psy-ab.3..0i22i30k1l4.3408.10939.0.11414.9.9.0.0.0.0.126.1009.0j9.9.0....0...1c.1.64.psy-ab..0.9.1007...0.0.EtkQTfo_h40#lrd=0x94ce8af860403a9d:0x934f4dec7b6873fc,1,,,&rlfi=hd:;si:10614788524813612028,l,Ch12aXZlbmRhIGRvIGNhbWFyw6NvIGFlcm9wb3J0byIDiAEBSKWwjL3zlYCACFpOCh12aXZlbmRhIGRvIGNhbWFyw6NvIGFlcm9wb3J0bxAAEAEQAhADGAAYARgCGAMiHXZpdmVuZGEgZG8gY2FtYXLDo28gYWVyb3BvcnRv;mv:[[-3.7788074999999997,-38.54098320000001],[-23.4253771,-46.478886599999996]]">Google Reviews</a>
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/tgi.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;TGI Fridays</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_29 }}</h6>
+                    <h6>Expected Wait Time: {{ var_30 }} minutes</h6>
+                    <h6>Risk Level: {{ var_31 }} <a class="btn-floating btn-small {{ var_32 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/TGI+Fridays+-+Riogale%C3%A3o+Terminal+2+Desembarque/@-22.8153169,-43.2466878,20z/data=!4m5!3m4!1s0x9979c56f6e81d3:0x18412610ff09545a!8m2!3d-22.8154963!4d-43.2461692">
+                      View Map &nbsp;</a>
+					  
+					<a href="https://www.google.com/search?q=TGI+Fridays+-+Riogale%C3%A3o+Terminal+2+Desembarque+Restaurant+in+Rio+de+Janeiro,+Brazil&stick=H4sIAAAAAAAAAONgecSYyy3w8sc9YamUSWtOXmOM4-IKzsgvd80rySypFArgYoOyVLgEpXj10_UNDdPMi8yMC4vMNRik-LlQhaQUlLh4NyxM-yTapmH5TEuI83JjXv7RypkMglEhnP8F1BwleBaxhoS4eyq4FWWmJFYWK-gqBGXmpyfmpB5enK8QklqUm5mXmKNgpOCSWpyam5RYVFiaqhCUWlySWFqUmFeikJkHUq-QkqrglZiXmlmUr6PgVJRYlZkDAJybNkLJAAAA&sa=X&ved=2ahUKEwjDrPypyNHoAhV0OX0KHUePCwoQ6RMwE3oECAwQBA&biw=1536&bih=706#lrd=0x9979c56f6e81d3:0x18412610ff09545a,1,,,">Google Reviews</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+<div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/emporio.jpg') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Emporio Aviacao</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_33 }}</h6>
+                    <h6>Expected Wait Time: {{ var_34 }} minutes </h6>
+                    <h6>Risk Level: {{ var_35 }} <a class="btn-floating btn-small {{ var_36 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Emporio+Avia%C3%A7ao/@-22.8143346,-43.245557,17z/data=!4m12!1m6!3m5!1s0x0:0xbec8bebf7b8c70b1!2sEmporio+Avia%C3%A7ao!8m2!3d-22.8151752!4d-43.2458252!3m4!1s0x0:0xbec8bebf7b8c70b1!8m2!3d-22.8151752!4d-43.2458252">View Map &nbsp;
+                      </a>
+                    <a href="https://www.google.com/maps/place/Emporio+Avia%C3%A7ao/@-22.8143346,-43.245557,17z/data=!4m12!1m6!3m5!1s0x0:0xbec8bebf7b8c70b1!2sEmporio+Avia%C3%A7ao!8m2!3d-22.8151752!4d-43.2458252!3m4!1s0x0:0xbec8bebf7b8c70b1!8m2!3d-22.8151752!4d-43.2458252">Google Reviews</a> 
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/dom.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Domino's Pizza</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_37 }}</h6>
+                    <h6>Expected Wait Time: {{ var_38 }} minutes</h6>
+                    <h6>Risk Level: {{ var_39 }}<a class="btn-floating btn-small {{ var_40 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Domino's+Pizza+-+Aeroporto+Gale%C3%A3o/@-22.8151042,-43.2466568,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798f14453b07:0x39c8438c3ee7356a!8m2!3d-22.8147065!4d-43.2465766">
+                      View Map &nbsp;</a>
+					<a href="https://www.google.com/search?ei=_PmJXpi6KLq90PEPncSyqAg&q=dominos%20rio%20de%20janeiro%20terminal%202&oq=dominos+rio+de+janeiro+terminal+2&gs_lcp=CgZwc3ktYWIQAzIICCEQFhAdEB46BAgAEEc6BggAEBYQHjoFCCEQoAE6BQghEKsCSgkIFxIFMTItODVKCAgYEgQxMi04UIAiWPk1YJo4aABwAngAgAFyiAHtBJIBAzEuNZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab&ved=2ahUKEwjztobazdHoAhXmJTQIHSpNC44QvS4wAHoECAoQFg&uact=5&npsic=0&rflfq=1&rlha=0&rllag=-22866061,-43222249,7017&tbm=lcl&rldimm=4163652125133845866&lqi=CiFkb21pbm9zIHJpbyBkZSBqYW5laXJvIHRlcm1pbmFsIDIiA4gBAVosCgdkb21pbm9zIiFkb21pbm9zIHJpbyBkZSBqYW5laXJvIHRlcm1pbmFsIDI&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&rlst=f#lrd=0x99798f14453b07:0x39c8438c3ee7356a,1,,,&rlfi=hd:;si:4163652125133845866,l,CiFkb21pbm9zIHJpbyBkZSBqYW5laXJvIHRlcm1pbmFsIDIiA4gBAVosCgdkb21pbm9zIiFkb21pbm9zIHJpbyBkZSBqYW5laXJvIHRlcm1pbmFsIDI;mv:[[-22.7948548,-43.1548756],[-23.021981,-43.583811999999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4">Google Reviews</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+
+<div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/cas.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Casa Bauducco</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_41 }}</h6>
+                    <h6>Expected Wait Time: {{ var_42 }} minutes</h6>
+                    <h6>Risk Level: {{ var_43 }}<a class="btn-floating btn-small {{ var_44 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Casa+Bauducco/@-22.8141887,-43.2476401,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798f2bbce855:0xb8f2ac487d699bf1!8m2!3d-22.8139838!4d-43.2471201">View Map &nbsp;
+                      </a>
+                  <a href="https://www.google.com/search?ei=x_eJXsepIZ3B0PEP5f-QiAk&q=Casa+Bauducco+rio&oq=Casa+Bauducco+rio&gs_lcp=CgZwc3ktYWIQAzoECAAQRzoCCAA6BggAEBYQHkoPCBcSCzEwLTk1Zzg5ZzE2SgwIGBIIMTAtMmczZzFQyFVYlWNgi2VoAHABeACAAWOIAbsDkgEBNZgBAKABAqABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwiHqcLIy9HoAhWdIDQIHeU_BJEQ4dUDCAw&uact=5#lrd=0x9bda3808a6fb1f:0x8b3bafa1a29e1d58,1,,,">Google Reviews</a>
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+ <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/delto.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Delírio Tropical </h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_45 }}</h6>
+                    <h6>Expected Wait Time: {{ var_46 }} minutes</h6>
+                    <h6>Risk Level: {{ var_47 }} <a class="btn-floating btn-small {{ var_48 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Del%C3%ADrio+Tropical+Gale%C3%A3o/@-22.8147917,-43.2474403,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x9979c90685927b:0x184418e2be8c5101!8m2!3d-22.8148671!4d-43.2470135">View Map &nbsp;
+                      </a>
+					<a href="https://www.google.com/search?q=delirio+tropical+rio+aeroporto+galeao&oq=Delirio+Tropical+rio+aer&aqs=chrome.1.69i57j33.6199j0j4&sourceid=chrome&ie=UTF-8#lrd=0x9979c90685927b:0x184418e2be8c5101,1,,,">Google Reviews</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/kopenhagen.png') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Kopenhagen</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_49 }}</h6>
+                    <h6>Expected Wait Time: {{ var_50 }} minutes</h6>
+                    <h6>Risk Level: {{ var_51 }} <a class="btn-floating btn-small {{ var_52 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Kopenhagen/@-22.815278,-43.248292,17z/data=!3m1!4b1!4m12!1m6!3m5!1s0x997989db21de57:0xa3e4f64b44e95c82!2sKopenhagen!8m2!3d-22.815283!4d-43.2461033!3m4!1s0x997989db21de57:0xa3e4f64b44e95c82!8m2!3d-22.815283!4d-43.2461033">View Map &nbsp;
+                      </a>
+                  <a href="https://www.google.com/search?tbm=lcl&ei=bEK4XpaeKY2_0PEPsoWj6Ag&q=kopenhagen+rio+de+janeiro+terminal+2&oq=kopenhagen+rio+de+janeiro+terminal+2&gs_l=psy-ab.3..33i299k1l3.12994.18090.0.18251.19.17.2.0.0.0.202.1668.4j10j1.15.0....0...1c.1.64.psy-ab..2.16.1600...0i22i30k1j33i160k1j33i10i160k1.0.PEpCpUyS_RA#lrd=0x997989db21de57:0xa3e4f64b44e95c82,1,,,&rlfi=hd:;si:11809834926011407490;mv:[[-22.815282999999997,-43.1899139],[-22.9768939,-43.2461033]]">Google Reviews</a>
+				  
+				  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/rei.jpg') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Rei Do Mate</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_53 }}</h6>
+                    <h6>Expected Wait Time: {{ var_54 }} minutes</h6>
+                    <h6>Risk Level: {{ var_55 }} <a class="btn-floating btn-small {{ var_56 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Rei+do+Mate/@-22.8141442,-43.2475775,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798ebe4896e7:0xe0364d4d79d32125!8m2!3d-22.8140796!4d-43.2476867">View Map &nbsp;
+                      </a>
+					<a href="https://www.google.com/search?ei=uEK4Xr2KJui_0PEP2f25mAU&q=rei%20do%20mate%20rio%20de%20janeiro%20terminal%202&oq=rei+do+mate+rio+de+janeiro+terminal+2&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCMgUIIRCrAjoCCAA6BggAEBYQHjoFCCEQoAFQhwpY6DZg8jdoAHAAeACAAYEBiAGED5IBBDcuMTKYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=2ahUKEwifi7nE8anpAhU1CjQIHeZ7DQMQvS4wAHoECAoQFw&uact=5&npsic=0&rflfq=1&rlha=0&rllag=-22881326,-43207997,8953&tbm=lcl&rldimm=7818714399268343716&lqi=CiVyZWkgZG8gbWF0ZSByaW8gZGUgamFuZWlybyB0ZXJtaW5hbCAyIgOIAQFaPwoWcmVpIGRvIG1hdGUgdGVybWluYWwgMiIlcmVpIGRvIG1hdGUgcmlvIGRlIGphbmVpcm8gdGVybWluYWwgMg&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&rlst=f#lrd=0x997989db21de57:0x6c81a752209f0fa4,1,,,&rlfi=hd:;si:7818714399268343716,l,CiVyZWkgZG8gbWF0ZSByaW8gZGUgamFuZWlybyB0ZXJtaW5hbCAyIgOIAQFaPwoWcmVpIGRvIG1hdGUgdGVybWluYWwgMiIlcmVpIGRvIG1hdGUgcmlvIGRlIGphbmVpcm8gdGVybWluYWwgMg;mv:[[-22.8001948,-43.095338299999995],[-23.012830599999997,-43.5839852]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4">Google Review</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/benjerry.png') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Ben & Jerry's Icecream</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_57 }}</h6>
+                    <h6>Expected Wait Time: {{ var_58 }} minutes</h6>
+                    <h6>Risk Level: {{ var_59 }} <a class="btn-floating btn-small {{ var_60 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Ben%26Jerry's+Terminal+2+Gale%C3%A3o/@-22.8146361,-43.2462136,19z/data=!4m5!3m4!1s0x99798f187d0657:0x68be854bf2f2de2d!8m2!3d-22.8145741!4d-43.2460754">View Map &nbsp;
+                      </a>
+					<a href="https://www.google.com/maps/place/Ben%26Jerry's+Terminal+2+Gale%C3%A3o/@-22.8145739,-43.2466225,19z/data=!3m1!4b1!4m7!3m6!1s0x99798f187d0657:0x68be854bf2f2de2d!8m2!3d-22.8145741!4d-43.2460754!9m1!1b1">Google Reviews</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/upper.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Upper Crust</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_61 }}</h6>
+                    <h6>Expected Wait Time: {{ var_62 }} minutes</h6>
+                    <h6>Risk Level: {{ var_63 }} <a class="btn-floating btn-small {{ var_64 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Upper+Crust/@-22.8141887,-43.2476401,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x9979c2df9b3c2b:0x4db77590e133f69e!8m2!3d-22.8136888!4d-43.2475264">
+                      View Map &nbsp;</a>
+					  
+					<a href="https://www.google.com/search?q=upper%20crust%20rio%20de%20janeiro&oq=Upper+Crust+&aqs=chrome.0.69i59j0j69i57j0l5.1205j0j7&sourceid=chrome&ie=UTF-8&npsic=0&rflfq=1&rlha=0&rllag=-22815401,-43237674,1026&tbm=lcl&rldimm=5600073926772520606&lqi=Chp1cHBlciBjcnVzdCByaW8gZGUgamFuZWlyb1opCgt1cHBlciBjcnVzdCIadXBwZXIgY3J1c3QgcmlvIGRlIGphbmVpcm8&ved=2ahUKEwivwbqrzNHoAhXMi54KHQR_CNAQvS4wAXoECAsQJw&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2&rlst=f#lrd=0x9979c2df9b3c2b:0x4db77590e133f69e,1,,,&rlfi=hd:;si:5600073926772520606,l,Chp1cHBlciBjcnVzdCByaW8gZGUgamFuZWlyb1opCgt1cHBlciBjcnVzdCIadXBwZXIgY3J1c3QgcmlvIGRlIGphbmVpcm8;mv:[[-22.813483299999998,-43.2266409],[-22.8173191,-43.248708699999995]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:2">Google Reviews</a>  
+                  </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+
+
+
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">RIOgalẽo Airport</h5>
+          <p class="grey-text text-lighten-4">Now access your desired shopping, dining and other essential options at
+            Rio de Galeo International
+            airport without worrying about missing your flight.</p>
+
+
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Team Vendata</a>
+          </div>
+        </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+</body>
+
+</html>

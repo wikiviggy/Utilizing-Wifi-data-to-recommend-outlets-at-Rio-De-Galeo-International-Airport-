@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rio Location Recommendation System</title>
+  <script data-require="jquery@1.12.4" data-semver="1.12.4" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+
+<footer class="page-footer white"> <h3 class="header center grey-text">RIOgalẽo Airport: Location Recommendations</h3>
+  </footer>   
+  <div id="index-banner" class="parallax-container">
+    
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        
+        <div class="input-field col s6 s12 white">
+          <i class="teal-text material-icons prefix">date_range</i>
+            <input type="text" class="datepicker" placeholder="Please enter your boarding date" id="boarding-date">
+        </div>
+
+
+ 
+
+        <div class="input-field col s6 s12 white">
+          <i class="teal-text material-icons prefix">access_time</i>
+            <input type="text" class="timepicker" placeholder="Please enter your boarding time" id="boarding-time">
+            <div class="parallax"><img src="{{ url_for('static', filename='img/r01_editada.jpg') }}" alt="Unsplashed background img 1"></div>
+        </div>
+
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <div class="input-field col s12">
+          <select class="browser-default" id="choices">
+            <option value="" disabled selected>Choose your Category</option>
+            <option value="1">Dining</option>
+            <option value="2">Miscellaneous</option>
+            <option value="3">Shopping</option>
+          </select>
+        </div>
+
+
+        <button class="btn waves-effect waves-light" type="submit" name="submit" onclick="submitfunc()"> Submit
+        <i class="material-icons right"></i>
+        </button>
+     
+     
+        <br><br>
+
+      </div>
+    </div>
+            <div class="parallax"><img src="{{ url_for('static', filename='img/01_editada.jpg') }}" alt="Unsplashed background img 1"></div>
+  </div>
+
+  
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">RIOgalẽo Airport</h5>
+          <p class="grey-text text-lighten-4">Now access your desired shopping, dining and other essential options at Rio de Galeo International 
+		  airport without worrying about missing your flight.</p>
+
+
+        </div>
+        
+       
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3">Vendata</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+  <script>
+       
+              function submitfunc() {
+			    var boardingdate= $("#boarding-date").val();
+                var boardingtime= $("#boarding-time").val();
+                var choices = $("#choices").val();
+				// var choice2 = $("#choice2").val();
+                  var formdata= {
+				       "boardingdate" : boardingdate,
+                       "boardingtime" : boardingtime,
+                       "choices" : choices,
+					   // "choice2" : choice2,
+                         }
+                $.ajax({
+                    type: "POST",
+                    url: "{{url_for('predict')}}",
+                    data: formdata,
+                    success: function(response) {
+                        document.write(response)
+                    }
+                });
+            }
+</script>
+</body>
+
+</html>

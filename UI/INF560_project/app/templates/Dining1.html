@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rio Location Recommendation System</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet"
+    media="screen,projection" />
+</head>
+
+<body>
+  <h3 class="header center black-text">RIOgalẽo Airport: Location Recommendations</h3>
+
+  <h2 class="center brown-text"><i class="material-icons">local_dining</i></h2>
+  <h5 class="center">Dining Options</h5>
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+      <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/cas.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Casa Bauducco</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_41 }}</h6>
+                    <h6>Expected Wait Time: {{ var_42 }} minutes</h6>
+                    <h6>Risk Level: {{ var_43 }}<a class="btn-floating btn-small {{ var_44 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Casa+Bauducco/@-22.8141887,-43.2476401,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798f2bbce855:0xb8f2ac487d699bf1!8m2!3d-22.8139838!4d-43.2471201">View Map &nbsp;
+                      </a>
+                  <a href="https://www.google.com/search?ei=x_eJXsepIZ3B0PEP5f-QiAk&q=Casa+Bauducco+rio&oq=Casa+Bauducco+rio&gs_lcp=CgZwc3ktYWIQAzoECAAQRzoCCAA6BggAEBYQHkoPCBcSCzEwLTk1Zzg5ZzE2SgwIGBIIMTAtMmczZzFQyFVYlWNgi2VoAHABeACAAWOIAbsDkgEBNZgBAKABAqABAaoBB2d3cy13aXo&sclient=psy-ab&ved=0ahUKEwiHqcLIy9HoAhWdIDQIHeU_BJEQ4dUDCAw&uact=5#lrd=0x9bda3808a6fb1f:0x8b3bafa1a29e1d58,1,,,">
+                  Reviews</a>
+          </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/divdog.jpeg') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Divino Fogão</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_17 }}</h6>
+                    <h6>Expected Wait Time: {{ var_18 }} minutes</h6>
+                    <h6>Risk Level: {{ var_19 }} <a class="btn-floating btn-small {{ var_20 }} pulse"><i class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Divino+Fog%C3%A3o/@-22.8149855,-43.2476851,19z/data=!3m1!4b1!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f4a7ba64d:0x9977e48bf46bc7ad!8m2!3d-22.8149867!4d-43.2471379">View Map &nbsp;</a>
+                    <a href="https://www.google.com/search?ei=tvKJXpviJryq0PEPjr-niAg&q=Divino+Fog%C3%A3o+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&oq=Divino+Fog%C3%A3o+RIOgale%C3%A3o+-+Aeroporto+Internacional+Tom+Jobim&gs_lcp=CgZwc3ktYWIQA0oJCBcSBTEyLTgzSggIGBIEMTItNFCi_QFYov0BYLKpAmgAcAB4AIABWIgBxQKSAQE0mAEAoAECoAEBqgEHZ3dzLXdpeg&sclient=psy-ab&ved=0ahUKEwiblY3extHoAhU8FTQIHY7fCYEQ4dUDCAw&uact=5#lrd=0x99798f4a7ba64d:0x9977e48bf46bc7ad,1,,,">
+                    Reviews </a>    
+          </div>
+                </div>
+              </div>
+            </div>
+</div>
+</div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/palaphita.JPG') }}">
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Palaphita</h3>
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_5 }}</h6>
+                    <h6>Expected Wait Time: {{ var_6 }} minutes</h6>
+                    <h6>Risk Level: {{ var_7 }} <a class="btn-floating btn-small {{ var_8 }} pulse"><i
+                          class="material-icons"></i></a></h6>
+                  </div>
+                  <div class="card-action">
+                    <a
+                      href="https://www.google.com/maps/place/Palaphita/@-22.8147129,-43.2469259,18z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f094b29d3:0xf7f4fe87e9efe8ec!8m2!3d-22.8153575!4d-43.2447591">View
+                      Map
+                      &nbsp;</a>
+
+                    <a
+                      href="https://www.google.com/search?q=palaphita+tom+jobin+airport&source=lmns&bih=754&biw=1536&hl=en&ved=2ahUKEwiGzYaswtHoAhVCJX0KHe58DZ8Q_AUoAHoECAEQAA#lrd=0x99798f094b29d3:0xf7f4fe87e9efe8ec,1,,,">
+                      Reviews </a>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  </div>
+  </div>
+
+
+
+
+
+
+
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">RIOgalẽo Airport</h5>
+          <p class="grey-text text-lighten-4">Now access your desired shopping, dining and other essential options at
+            Rio de Galeo International
+            airport without worrying about missing your flight.</p>
+
+
+        </div>
+
+        <div class="footer-copyright">
+          <div class="container">
+            Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Team Vendata</a>
+          </div>
+        </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+</body>
+
+</html>

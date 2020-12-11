@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rio Location Recommendation System</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+  <h3 class="header center black-text">RIOgalẽo Airport: Location Recommendations</h3>
+ <h2 class="center brown-text"><i class="material-icons">shopping_basket</i></h2>
+            <h5 class="center">Shopping Options</h5>
+
+
+  <div class="container">
+    <div class="section">
+      <div class="row">
+
+
+
+
+      <!-- Brit  -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+      
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ url_for('static', filename='img/brit.png') }}">
+      
+                </div>
+                <h3 class="card-title">&nbsp;&nbsp;Britts Shopping</h3>
+      
+                <div class="card-content">
+                  <h6>Average Rating: {{ var_9 }}</h6>
+                  <h6>Expected Wait Time: {{ var_10 }} minutes</h6>
+                  <h6>Risk Level: {{ var_11 }} <a class="btn-floating btn-small {{var_12}} pulse"><i
+                        class="material-icons"></i></a></h6>
+      
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://www.google.com/maps/place/Britt+Shop/@-22.8147069,-43.2465973,19.5z/data=!4m5!3m4!1s0x0:0xe7c8d009be72663b!8m2!3d-22.8147911!4d-43.2466476">View
+                    Map &nbsp;</a>
+                  <a
+                    href="https://www.google.com/search?ei=VES4XpCYMLGs0PEPyrS18A0&q=britt+shop+rio+gale%C3%A3o&oq=Britts+Shopping+rio+Ga&gs_lcp=CgZwc3ktYWIQAxgAMggIIRAWEB0QHjoECAAQRzoFCCEQqwI6BggAEBYQHlDnCVjOGWD6KWgAcAF4AIABbYgBlgWSAQM2LjGYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab#lrd=0x997b7ca7d44849:0xe7c8d009be72663b,1,,,">Reviews</a>
+                </div>
+      
+      
+      
+              </div>
+            </div>
+      
+          </div>
+      
+        </div>
+      </div>
+      <!-- Dufry -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+      
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ url_for('static', filename='img/dufry.jpg') }}">
+      
+                </div>
+                <h3 class="card-title">&nbsp;&nbsp; Dufry Shopping</h3>
+      
+                <div class="card-content">
+                  <h6>Average Rating: {{ var_1 }}</h6>
+                  <h6>Expected Wait Time: {{ var_2 }} minutes</h6>
+                  <h6>Risk Level: {{ var_3 }} <a class="btn-floating btn-small {{var_4}} pulse"><i
+                        class="material-icons"></i></a></h6>
+      
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://www.google.com/maps/place/Dufry+Shopping/@-22.8143667,-43.2471404,18z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x99798f31892c0f:0xa1e6568fc4125264!8m2!3d-22.8145126!4d-43.2469944">View
+                    Map &nbsp;</a>
+                  <a
+                    href="https://www.google.com/search?ei=v0O4XrHrGuuv0PEPzfalqAM&q=dufry+shopping+galeao&oq=Dufry+Shopping+Gale&gs_lcp=CgZwc3ktYWIQAxgBMgYIABAWEB4yBggAEBYQHjoECAAQRzoCCABQ1gxYzidgojhoAXABeACAAWOIAbIEkgEBNpgBAKABAaoBB2d3cy13aXo&sclient=psy-ab#lrd=0x99798f31892c0f:0xa1e6568fc4125264,1,,,">Reviews</a>
+      
+                </div>
+      
+      
+      
+              </div>
+            </div>
+      
+      
+      
+      
+      
+          </div>
+      
+        </div>
+      </div>
+      <!-- Ralph -->
+      <div class="col s12 m4">
+        <div class="icon-block">
+      
+      
+          <div class="row">
+            <div class="col s12 m12">
+              <div class="card">
+                <div class="card-image">
+                  <img src="{{ url_for('static', filename='img/polo.jpg') }}">
+      
+                </div>
+                <h3 class="card-title">&nbsp;&nbsp;Ralph Lauren</h3>
+      
+                <div class="card-content">
+                  <h6>Average Rating: {{ var_5 }}</h6>
+                  <h6>Expected Wait Time: {{ var_6 }} minutes</h6>
+                  <h6>Risk Level: {{ var_7 }} <a class="btn-floating btn-small {{var_8}} pulse"><i
+                        class="material-icons"></i></a></h6>
+      
+                </div>
+                <div class="card-action">
+                  <a
+                    href="https://www.google.com/maps/place/Polo+Ralph+Lauren/@-22.8149413,-43.2456819,18z/data=!4m12!1m6!3m5!1s0x99798f3b16364f:0xcfa9dfbf2f584512!2sRIOgale%C3%A3o+-+Tom+Jobim+International+Airport!8m2!3d-22.805265!4d-43.2566293!3m4!1s0x9979b74939d8f7:0x4aca280fd1b37040!8m2!3d-22.8150268!4d-43.2445321">View
+                    Map &nbsp;</a>
+                  <a
+                    href="https://www.google.com/search?ei=90O4XqfdJJDJ0PEPmrymgAE&q=Polo+Ralph+Lauren+Galeao+Rio&oq=Polo+Ralph+Lauren+Galeao+Rio&gs_lcp=CgZwc3ktYWIQAzIFCCEQoAEyBQghEKABMgUIIRCrAjoECAAQR1D4V1iWYmDHZGgAcAF4AIABZYgBngSSAQM1LjGYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=0ahUKEwjntOPY8qnpAhWQJDQIHRqeCRAQ4dUDCAw&uact=5#lrd=0x9979b74939d8f7:0x4aca280fd1b37040,1,,,">Reviews</a>
+                </div>
+      
+      
+      
+              </div>
+            </div>
+      
+          </div>
+      
+        </div>
+      </div>
+      
+        <!-- Mr Cat -->
+        <!-- <div class="col s12 m4">
+          <div class="icon-block">
+        
+        
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/mrcat.png') }}">
+        
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Mr. Cat</h3>
+        
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_17 }}</h6>
+                    <h6>Expected Wait Time: {{ var_18 }} minutes</h6>
+                    <h6>Risk Level: {{ var_19 }}<a class="btn-floating btn-small {{var_20}} pulse"><i
+                          class="material-icons"></i></a></h6>
+        
+                  </div>
+                  <div class="card-action">
+                    <a
+                      href="https://www.google.com/maps/place/Mr.Cat/@-22.8149468,-43.2455778,19.25z/data=!4m5!3m4!1s0x0:0x580741fd00df7c3!8m2!3d-22.8154823!4d-43.2454116">View
+                      Map &nbsp;</a>
+                    <a
+                      href="https://www.google.com/search?q=Mr+CAT+rio+galeao&npsic=0&rflfq=1&rlha=0&rllag=-22812816,-43260438,6168&tbm=lcl&ved=2ahUKEwi_5su29KnpAhWGFTQIHREZB-AQtgN6BAgKEAQ&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4&rldoc=1#lrd=0x99798f0d3ec9a5:0x580741fd00df7c3,1,,,&rlfi=hd:;si:396444447191988163,l,ChFNciBDQVQgcmlvIGdhbGVhbyIDiAEBWhsKBm1yIGNhdCIRbXIgY2F0IHJpbyBnYWxlYW8;mv:[[-22.7750836,-43.1668229],[-22.9956003,-43.34287]]">Google
+                      Reviews</a>
+        
+                  </div>
+        
+        
+        
+                </div>
+              </div>
+        
+        
+        
+        
+        
+            </div>
+        
+          </div>
+        </div> -->
+
+
+      
+
+
+
+
+            
+
+
+         
+
+
+          </div>
+        </div> 
+      </div>
+
+
+
+  
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">RIOgalẽo Airport</h5>
+          <p class="grey-text text-lighten-4">Now access your desired shopping, dining and other essential options at Rio de Galeo International 
+		  airport without worrying about missing your flight.</p>
+
+
+        </div>
+      
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Team Vendata </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+</body>
+
+</html>

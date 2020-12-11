@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RIOgalẽo Airport- Location Recommendation System</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/materialize.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+
+
+  <!-- <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav> -->
+  <h3 class="header center black-text">Rio Galeo Airport: Location Recommendations</h3>
+
+  <!-- <div id="index-banner" class="parallax-container">
+    
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        
+        <div class="input-field col s6 s12 white">
+
+          <i class="teal-text material-icons prefix">search</i>
+          <input type="text" placeholder="Please enter your boarding time" id="autocomplete-input"
+            class="autocomplete teal-text">
+          
+        </div> -->
+
+        
+
+        
+       
+
+     
+
+  
+
+ <h2 class="center brown-text"><i class="material-icons">local_atm</i></h2>
+            <h5 class="center">Miscellaneous Options</h5>
+
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+           
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/bs.png') }}">
+                    
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Buddha Spa</h3>
+
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_5 }}</h6>
+                    <h6>Expected Wait Time: {{ var_6 }} minutes</h6>
+                    <h6>Risk Level: {{ var_7 }}<a class="btn-floating btn-small {{ var_8 }} pulse"><i class="material-icons"></i></a></h6>
+                  
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Buddha+Spa+Gale%C3%A3o/@-22.8149033,-43.2467058,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99797c43b54291:0x702c1f8cb65f847e!8m2!3d-22.814847!4d-43.2467405">View Map</a>
+                    <a href="https://www.google.com/search?tbm=lcl&sxsrf=ALeKk02YZy-8ncIVkqcBU6x6YMWHPYotyQ%3A1588726306794&ei=IgqyXviHMJfE-gSj94GYAw&q=buddha+spa+rio+de+janeiro+airport&oq=buddha+spa+rio+de+janeiro+airport&gs_l=psy-ab.3...120606.125876.0.126138.20.15.0.0.0.0.228.1539.3j8j1.12.0....0...1c.1.64.psy-ab..9.7.823...0j35i39k1j35i304i39k1j0i67k1j0i7i30k1.0.msG2BLzBzis#lrd=0x99797c43b54291:0x702c1f8cb65f847e,1,,,&rlfi=hd:;si:8082870120438793342,l,CiFidWRkaGEgc3BhIHJpbyBkZSBqYW5laXJvIGFpcnBvcnQiA4gBAVo3ChJidWRkaGEgc3BhIGFpcnBvcnQiIWJ1ZGRoYSBzcGEgcmlvIGRlIGphbmVpcm8gYWlycG9ydA;mv:[[-22.8035899,-43.1547084],[-23.0137228,-43.3710789]]">Google Reviews</a>
+
+                  </div>
+
+            
+
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+            
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/livraria.jpeg') }}">
+                    
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Livraria</h3>
+
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_9 }}</h6>
+                    <h6>Expected Wait Time: {{ var_10 }} minutes</h6>
+                    <h6>Risk Level: {{ var_11 }} <a class="btn-floating btn-small {{ var_12 }} pulse"><i class="material-icons"></i></a></h6>
+                  
+                  </div>
+                  <div class="card-action">
+                    <a href="https://www.google.com/maps/place/Livraria+Leitura/@-22.8153287,-43.2447557,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798faf56800b:0x7a97996af807da22!8m2!3d-22.8152157!4d-43.2445747">View Map</a>
+                    <a href="https://www.google.com/search?sxsrf=ALeKk03lfF1vIpd50ydglBxXPS_Gzfz8hg:1588726295565&source=hp&ei=DwqyXom0OYri-gSqkIioBQ&q=livraria%20rio%20de%20janeiro%20airport&oq=livraria+rio+de+janeiro+airport&gs_lcp=CgZwc3ktYWIQAzIFCCEQqwIyBQghEKsCMgUIIRCrAjoECCMQJzoFCAAQgwE6AggAOgQIABAKOgYIABAWEB46BQghEKABOgcIIRAKEKABUH9YqixgqDJoAHAAeACAAZ0BiAHZEZIBBDYuMTSYAQCgAQGqAQdnd3Mtd2l6&sclient=psy-ab&ved=2ahUKEwje9vfTgp7pAhWYqZ4KHS9gAH8QvS4wAHoECAoQKA&uact=5&npsic=0&rflfq=1&rlha=0&rllag=-22899448,-43210518,9988&tbm=lcl&rldimm=8833697878817364514&lqi=Ch9saXZyYXJpYSByaW8gZGUgamFuZWlybyBhaXJwb3J0WisKCGxpdnJhcmlhIh9saXZyYXJpYSByaW8gZGUgamFuZWlybyBhaXJwb3J0&phdesc=SI4_Wiv42SA&rldoc=1&tbs=lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:10&rlst=f#lrd=0x99798faf56800b:0x7a97996af807da22,1,,,&rlfi=hd:;si:8833697878817364514,l,Ch9saXZyYXJpYSByaW8gZGUgamFuZWlybyBhaXJwb3J0WisKCGxpdnJhcmlhIh9saXZyYXJpYSByaW8gZGUgamFuZWlybyBhaXJwb3J0,y,SI4_Wiv42SA;mv:[[-22.8040402,-43.163688],[-23.0126444,-43.3992123]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!1m4!1u16!2m2!16m1!1e1!1m4!1u16!2m2!16m1!1e2!2m1!1e2!2m1!1e16!2m1!1e3!3sIAE,lf:1,lf_ui:10">Google Reviews</a>
+                  </div>
+
+            
+
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        <div class="col s12 m4">
+          <div class="icon-block">
+           
+
+            <div class="row">
+              <div class="col s12 m12">
+                <div class="card">
+                  <div class="card-image">
+                    <img src="{{ url_for('static', filename='img/globex.jpg') }}">
+                    
+                  </div>
+                  <h3 class="card-title">&nbsp;&nbsp;Global Exchange</h3>
+
+                  <div class="card-content">
+                    <h6>Average Rating: {{ var_1 }}</h6>
+                    <h6>Expected Wait Time: {{ var_2 }} minutes</h6>
+                    <h6>Risk Level: {{ var_3 }} <a class="btn-floating btn-small {{ var_4 }} pulse"><i class="material-icons"></i></a></h6>
+                  
+                  </div>
+                  <div class="card-action">
+                   <a href="https://www.google.com/maps/place/Global+Exchange/@-22.8151042,-43.2466568,19z/data=!4m12!1m6!3m5!1s0x99798f2c14bfdf:0xaf7e1ad5d42ffd61!2zRW1ww7NyaW8gZG8gQcOnbw!8m2!3d-22.8141436!4d-43.2470832!3m4!1s0x99798f10fdab0f:0xb1f609cb0ce09b8b!8m2!3d-22.8149936!4d-43.2456796">View Map</a>
+                   <a href="https://www.google.com/search?tbm=lcl&sxsrf=ALeKk00A_8W3Yxg2VxoncN5DLyYqBoVI3Q%3A1588726434469&ei=ogqyXsySHM3Y-gSKq7a4Cw&q=Global+exchange+rio+de+janeiro+airport&oq=Global+exchange+rio+de+janeiro+airport&gs_l=psy-ab.3...75678.79607.0.80095.25.19.0.0.0.0.132.1950.3j15.18.0....0...1c.1.64.psy-ab..10.5.581...0j0i67k1j0i7i30k1j0i8i7i30k1j33i10k1.0.IOkN9e6i9m4#lrd=0x99798f10fdab0f:0xb1f609cb0ce09b8b,1,,,&rlfi=hd:;si:12823447756683123595,l,CiZHbG9iYWwgZXhjaGFuZ2UgcmlvIGRlIGphbmVpcm8gYWlycG9ydCIDiAEBWjkKD2dsb2JhbCBleGNoYW5nZSImZ2xvYmFsIGV4Y2hhbmdlIHJpbyBkZSBqYW5laXJvIGFpcnBvcnQ;mv:[[-22.814993599999998,-43.1803362],[-22.9669299,-43.245679599999995]]">Google Reviews</a>
+                  </div>
+
+            
+
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+        </div>
+        
+        
+
+       
+      </div>
+
+    </div>
+  </div>
+
+
+  
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l12 s12">
+          <h5 class="white-text">RIOgalẽo Airport</h5>
+          <p class="grey-text text-lighten-4">Now access your desired shopping, dining and other essential options at Rio de Galeo International 
+		  airport without worrying about missing your flight.</p>
+
+
+        </div>
+        
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Team Vendata</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="{{ url_for('static', filename='js/materialize.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+
+</body>
+
+</html>
